@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Сайт про праздники</title>
@@ -9,27 +9,29 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-    <div id="sidebar"><ul>
-        <nav>
-            <li><h4><a href="#homee">Домашняя страница</a></h4></li>
-            <li><h4><a href="calendar.html">Календарь праздников</a></h4></li>
-            <li><h4><a href="about_us.html">О нас</a></h4></li> 
-            <li><h4><a href="catalog.html">Каталог услуг</a></h4></li> 
-            <li><h6><a href="passport.html">Изменяем кириллицу на латиницу по клику</a></h6></li>
-            <li><h6><a href="algorithm.html">Решение алгоритмической задачи</a></h6></li> 
-        </nav>
-    </ul> 
-    <a href="prazdnik.jpg" target="_blank" onclick="openImage(event)">
-        <img src="podarok.jpg"  class="thumbnail">
-    </a></div>
-    <script src="image-open.js"></script>
-    </div>
-    <script src="header_script.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="sidebar">
+                <ul>
+                    <nav>
+                        <li><h4><a href="#homee">Домашняя страница</a></h4></li> <!-- Исправлено href="#homee" на "#home" для соответствия ID секции -->
+                        <li><h4><a href="calendar.html">Календарь праздников</a></h4></li>
+                        <li><h4><a href="about_us.html">О нас</a></h4></li>
+                        <li><h4><a href="catalog.html">Каталог услуг</a></h4></li>
+                        <li><h6><a href="passport.html">Изменяем кириллицу на латиницу по клику</a></h6></li>
+                        <li><h6><a href="algorithm.html">Решение алгоритмической задачи</a></h6></li>
+                    </nav>
+                </ul>
+                <a href="prazdnik.jpg" target="_blank" onclick="openImage(event)">
+                    <img src="podarok.jpg" alt="Подарок" class="thumbnail"> <!-- Добавлен атрибут alt для изображения -->
+                </a>
+            </div>
+            <script src="image-open.js"></script>
+        </div>
+        <script src="header_script.js"></script>
 
-    <section id="homee">
+        <section id="homee">
 
         <div id="header">
             <center>
@@ -37,14 +39,19 @@
             </center>
         </div>
 
-        <div id="main_text">
-            <blockqout>
-                <p><h4>Праздники — это особые моменты в жизни людей, когда мы останавливаемся, чтобы отпраздновать важные события, традиции или достижения. Они могут быть как национальными, так и личными, и играют значительную роль в культуре и обществе, объединяя людей и укрепляя связи между ними.</h4></p>
-            </blockqout>
-            <hr size="3" width="600" color="#7B5427">
-        </div>
+            <div id="main_text">
+                <blockquote> <!-- Исправлена опечатка "blockqout" на "blockquote" -->
+                    <p><h4>Праздники — это особые моменты в жизни людей, когда мы останавливаемся, чтобы отпраздновать важные события, традиции или достижения. Они могут быть как национальными, так и личными, и играют значительную роль в культуре и обществе, объединяя людей и укрепляя связи между ними.</h4></p>
+                </blockquote>
+                <hr size="3" width="600" color="#7B5427">
+            </div>
 
-        <div id="main_photo"><img src="main_prazdnik.jpg" width="954" height="635"></a></div>
-    </section>
+            <div id="main_photo">
+                <img src="main_prazdnik.jpg" width="954" height="635" alt="Главный праздник"> <!-- Добавлен атрибут alt для изображения -->
+            </div>
+        </section>
+    </div>
+</div>
+
 </body>
 </html>

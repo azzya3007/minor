@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="minor-project-styles.css">
 </head>
 <body>
-    <div id="home"><h6><a href="index.html">Вернуться на главную страницу</a></h6></div> 
-    
+    <div id="home"><h6><a href="index.html">Вернуться на главную страницу</a></h6></div>
+
     <div class="container">
         <div class="card-body">
             <h2 class='card-title text-center'>Каталог</h2>
-            <input type="radio" id="title" name="sort" checked onchange="sort()"> Сортировать по названию </input>
-            <input type="radio" id="price" name="sort" onchange="sort()"> Сортировать по цене </input>
-            <input type="text" id="search" name="search" onchange="search()"> Поиск по каталогу </input>
+            <label for="title">Сортировать по названию</label>
+            <input type="radio" id="title" name="sort" checked onchange="sort()">
+            <label for="price">Сортировать по цене</label>
+            <input type="radio" id="price" name="sort" onchange="sort()">
+            <label for="search">Поиск по каталогу</label>
+            <input type="text" id="search" name="search" onchange="search()">
             <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
                 <input name="q" type="hidden" value="search">
                 <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert">
                 </ul>
-                <input class="button" type="Submit" value="В корзину">
+                <input class="button" type="submit" value="В корзину">
             </form>
         </div>
+    </div>
+<script src="sorting.js"></script>
 </body>
- <script src="sorting.js"></script>
-
-
-
 </html>
